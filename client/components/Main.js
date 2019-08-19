@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Stories from './Stories'
+import StoriesList from './StoriesList'
 import {connect} from 'react-redux'
 import {fetchStories} from '../store/stories'
 
@@ -18,7 +18,7 @@ class Main extends React.Component {
           </div>
           <Navbar />
         </div>
-        <Stories />
+        <StoriesList />
       </div>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-const Stories = (props) => {
+const StoriesList = (props) => {
   const stories = props.stories
   return (
     <div id='stories' className='column'>
@@ -28,4 +28,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Stories)
+export default connect(mapStateToProps)(StoriesList)
