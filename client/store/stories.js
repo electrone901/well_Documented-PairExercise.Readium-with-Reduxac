@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+// action type
 const SET_STORIES = 'SET_STORIES'
 
+// action creator
 export const setStories = (stories) => {
   return {
     type: SET_STORIES,
@@ -9,6 +11,7 @@ export const setStories = (stories) => {
   }
 }
 
+// fetchStories thunk
 export const fetchStories = () => {
   return async (dispatch) => {
     try {
@@ -20,8 +23,10 @@ export const fetchStories = () => {
   }
 }
 
+// initial state
 const initialState = []
 
+// reducer, function that returns the next state it takes the current state  and the action
 export default (state = initialState, action) => {
   switch(action.type) {
     case SET_STORIES:

@@ -1,7 +1,8 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 const StoriesList = (props) => {
+   // passes  stories  as props
   const stories = props.stories
   return (
     <div id='stories' className='column'>
@@ -24,6 +25,8 @@ const StoriesList = (props) => {
 
 const mapStateToProps = (state) => {
   return {
+    // mapStateToProps makes available the redux state to this compponent as props
+    // gets stories from redux store
     stories: state.stories
   }
 }

@@ -26,6 +26,8 @@ class Main extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    // mapDispatchToProps makes available the redux functions to this compponent as props
+    // loadStories dispatch the  fetchStories functions which will do axios call to our  db
     loadStories: () => dispatch(fetchStories())
   }
 }
